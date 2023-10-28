@@ -273,6 +273,7 @@ public class Lab3P1_JuanLópez {
                                    }
                                    System.out.println("");
                                    break;
+                                   
                            }
                     }
                     
@@ -300,7 +301,7 @@ public class Lab3P1_JuanLópez {
                                    int ronda=1;
                                    ataque2=ataque2-ataque2*defensa1;
                                    ataque1=ataque1-ataque1*defensa2;
-                                   while (vida1>0&&vida2>0&&control<=rondas){
+                                   while (vida1>0&&vida2>0&&control<=rondas&&rondas>0&&rondas<=10){
                                        System.out.println("------------Ronda"+ronda+"-------------");
                                        System.out.println("Vida Pokemon 1:"+vida1);
                                        System.out.println("Vida Pokemon 2:"+vida2);
@@ -480,7 +481,7 @@ public class Lab3P1_JuanLópez {
                                    break;
                                 }
                                 
-                            
+                            break;
                            
                     }
                 case 3:
