@@ -79,8 +79,7 @@ public class Lab3P1_JuanLópez {
                             
                     switch (pelea){
                         case 1:
-                           switch (pelea){
-                               case 1:
+                           
                                     vida1=280;
                                    double ataque1=80;
                                    double defensa1=0.15;
@@ -274,8 +273,8 @@ public class Lab3P1_JuanLópez {
                                    System.out.println("");
                                    break;
                                    
-                           }
-                    }
+                           }break;
+                    
                     
                     case 2: 
                            System.out.println("Ingrese una pelea determinada ***");
@@ -286,7 +285,7 @@ public class Lab3P1_JuanLópez {
                             System.out.println("Ingrese pelea");
                             int lucha=leer.nextInt();
                             System.out.println("");
-                            System.out.println("Ingrese cuantas rondas");
+                            System.out.println("Ingrese cuantas rondas. Deben de ser maximo 10");
                             int rondas=leer.nextInt();
                             int control=1;
                                 switch (lucha){
@@ -453,6 +452,7 @@ public class Lab3P1_JuanLópez {
                                        vida2=vida2-ataque1;
                                        ronda++;
                                        if (vida1<vida2){
+                                           
                                            ganador=2;
                                        }else if (vida2<vida1){
                                            ganador=1;
@@ -491,7 +491,7 @@ public class Lab3P1_JuanLópez {
                     int y=1;
                     int columnas =num;
                     int filas = num;
-                    while (num<0&&num%2==0){
+                    while (num<0&&num%2==1&&num>7){
                         System.out.println("Ingrese numero impar positivo");
                         num=leer.nextInt();
                     }
